@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.Navbars{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.Navbars img{
+    width: 100px;
+}
+
+.Navbars .burger{
+    position: relative;
+    cursor: pointer;
+}
+
+.Navbars .bars{
+    width: 30px;
+    background-color: #fff;
+    height: 3px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.Navbar .bars2{
+    transform: translateX(-10px);
+}
+
+/* Hero Section */
+.HeroSection{
+    background-image: url('../assets/bgHero.webp');
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    color: #fff;
+    padding: 0 8%;
+    align-items: center;
+    position: relative;
+}
+
+.HeroSection .HeroTeks{
+    text-align: left;
+    width: 70%;
+}
+
+.HeroSection .HeroTeks h3{
+    color: gray;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.HeroSection .HeroTeks span{
+    font-size: 70px;
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    font-weight: bolder;
+}
+
+.socialMedia{
+    position: fixed;
+    left: -150px;
+    bottom: 190px;
+    transform: rotate(-90deg);
+}
+
+.socialMedia ul{
+    display: flex;
+    list-style: none;
+}
+
+.socialMedia ul li:nth-child(2){
+    margin-left: 30px;
+}
+
+.socialMedia ul li{
+    margin-right: 20px;
+}
+
+.socialMedia ul li a{
+    color: #fff;
+    font-size: 12px;
+}
+
+.mouseAnimation{
+    width: 40px;
+    height: 60px;
+    border: 2px solid red;
+    position: absolute;
+    bottom: 40px;
+    right: 200px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mouse{
+    width: 10px;
+    height: 10px;
+    margin-top: -10px;
+    background-color: red;
+    border-radius: 50%;
+    animation: scroll 1s infinite linear;
+}
+
+@keyframes scroll {
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+
+/* About Us */
+.AboutUs{
+    background-color: #191a1c;
+    padding: 2rem 4%;
+}
+
+.AboutUs .title{
+    text-align: left;
+    color:#9da1a5;
+}
+
+.AboutUs .title h3{
+    font-size: 30px;
+    position: relative;
+}
+
+.AboutUs .title h3::after{
+    width: 150px;
+    background-color: red;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+}
+
+.aboutContent{
+    margin-top: 60px;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AboutUs .images{
+    max-width: 400px;
+    border: 2px solid rgba(157, 161, 165, 0.5);
+    padding: 15px;
+    position: relative;
+    animation: wave 1s infinite linear;
+}
+
+@keyframes wave {
+    100%{
+        border: 1px solid rgba(157, 161, 165, 1);
+    }
+}
+
+.aboutContent .images:after{
+    content: '';
+    border: 1px solid #9da1a5;
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    left: -10px;
+    top: -10px;
+}
+
+.AboutUs .images img{
+    width: 100%;
+}
+
+.aboutMeContent{
+    max-width: 600px;
+    color: #9da1a5;
+}
+
+
+.aboutMeContent h3{
+    font-size: 35px;
+}
+
+.aboutMeContent .skills{
+    margin-top: 40px;
+}
+
+.aboutMeContent .skills ul li{
+    position: relative;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.aboutMeContent .skills ul li::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 5px;
+    background-color: #9da1a5;
+}
+
+.aboutMeContent .skills ul li:nth-child(1)::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 90%;
+    left: 0;
+    height: 5px;
+    background-color: red;
+}
+
+.aboutMeContent .skills ul li:nth-child(2)::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 70%;
+    left: 0;
+    height: 5px;
+    background-color: red;
+}
+
+.aboutMeContent .skills ul li:nth-child(3)::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 50%;
+    left: 0;
+    height: 5px;
+    background-color: red;
+}
+
+.aboutMeContent button{
+    background-color: transparent;
+    border: 1px solid #9da1a5;
+    padding: 10px 15px;
+    color: #9da1a5;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.ServiceSection{
+    background-color: #191a1c;
+    padding: 2rem 7%;
+}
+
+.ServiceSection .title{
+    text-align: left;
+    color:#9da1a5;
+}
+
+.ServiceSection .title h3{
+    font-size: 30px;
+    position: relative;
+}
+
+.ServiceSection .title h3::after{
+    width: 150px;
+    background-color: red;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+}
+
+.ServiceContent{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.ServiceContent .card{
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background-color: #1a1a1a;
+    border: 1px solid #9da1a5;
+    padding: 15px;
+    color: #9da1a5;
+    cursor: pointer;
+}
+
+.ServiceContent .card:hover{
+    border: 1px solid red;
+    transform: translateY(10px);
+    transition: .8s;
+}
+
+.ServiceContent img{
+    width: 60px;
+}
+
+.ServiceContent .card h3{
+    margin: 10px 0;
+}
+
+
+.ServiceContent .card p{
+    font-size: 15px;
+}
+
+/* Count Project */
+.CountProject {
+    background-color: #191a1c;
+    padding-bottom: 50px;
+    padding: 4rem 7%;
+}
+
+.CountProject .cardWrapper{
+    display: flex;
+    background-color: #1d1e20;
+    padding: 20px;
+    width: 100%;
+}
+
+.CountProject .cardWrapper .card{
+    padding: 30px 20px;
+    text-align: center;
+    color: #9da1a5;
+}
+
+.CountProject .cardWrapper .card span{
+    color: red;
+}
+
+.CountProject .cardWrapper .wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #191a1c;
+}
+
+/* Project */
+.Project{
+    background-color: #191a1c;
+    padding: 50px 5%;
+}
+
+.Project .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Project .title h3{
+    font-size: 30px;
+    position: relative;
+    color: #9da1a5;
+}
+
+.Project .title h3::after{
+    width: 120px;
+    background-color: red;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+}
+
+.Project .title button{
+    padding: 10px 20px;
+    border: 1px solid #9da1a5;
+    background-color: transparent;
+    color: #9da1a5;
+    cursor: pointer;
+}
+
+.Project .title button:hover{
+    background-color: #9da1a5;
+    color: #1a1a1a;
+}
+
+.Project .ProjectContent{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.Project .ProjectContent .card{
+    width: 480px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 300px;
+}
+
+.Project .ProjectContent .card:hover .teks{
+    bottom: 0;
+    transition: .5s;
+}
+
+.Project .ProjectContent .card .teks{
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    transition: .5s;
+}
+
+.Project .ProjectContent img{
+    width: 100%;
+    height: 100%;
+}
+
+/*resume */
+.Resumes{
+    background-color: #191a1c;
+    padding: 30px 6%;
+}
+
+.Resumes .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Resumes .title h3{
+    font-size: 30px;
+    position: relative;
+    color: #9da1a5;
+}
+
+.Resumes .title h3::after{
+    width: 120px;
+    background-color: red;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+}
+
+.ResumeContent{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.ResumeContent .card{
+    width: 350px;
+    border-top: 3px solid red;
+    padding: 30px 10px;
+    color: #9da1a5;
+    background-color: #222222;
+    text-align: left;
+    cursor: pointer;
+}
+
+.ResumeContent .card:hover{
+    transform: translateY(10px);
+    transition: .8s;
+}
+
+.ResumeContent .card2{
+    width: 350px;
+    border-top: 3px solid yellow;
+    padding: 30px 10px;
+    color: #9da1a5;
+    background-color: #222222;
+    text-align: left;
+}
+
+.ResumeContent .card3{
+    width: 350px;
+    border-top: 3px solid blue;
+    padding: 30px 10px;
+    color: #9da1a5;
+    background-color: #222222;
+    text-align: left;
+}
+
+.ResumeContent .card .teks1, .teks2, .teks3{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* Team */
+.OurTeam{
+    background-color: #191a1c;
+    padding: 30px 3%;
+}
+
+.OurTeam .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.OurTeam .title h3{
+    font-size: 30px;
+    position: relative;
+    color: #9da1a5;
+}
+
+.OurTeam .title h3::after{
+    width: 150px;
+    background-color: red;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+}
+
+.TeamContent{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.TeamContent .card{
+    width: 300px;
+    position: relative;
+    cursor: pointer;
+}
+
+.TeamContent .card img{
+    width: 100%;
+}
+
+.TeamContent .card .nameTeks{
+    background-color: #222222;
+    margin-top: -7px;
+    padding: 10px;
+    color: #9da1a5;
+}
+
+.TeamContent .sci{
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+}
+
+.TeamContent .sci ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    visibility: hidden;
+    transition: .2s;
+}
+
+.TeamContent .card:hover .sci ul{
+    visibility: visible;
+    transition: .2s;
+}
+
+.TeamContent .card:hover{
+    transform: translateY(10px);
+    transition: .7s;
+}
+
+.TeamContent .sci ul li{
+    margin-right: 10px;
+}
+
+.TeamContent .sci ul li{
+    background-color: #191a1c;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.TeamContent .sci ul li a{
+    color: #fff;
+}
+
+.TeamContent .overlay{
+    width: 100%;
+    height: 84%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 0;
+    visibility: hidden;
+}
+
+.TeamContent .card:hover .overlay{
+    visibility: visible;
+    transition: .2s;
+}
+
+
+/* Get In Touch */
+.getTouch{
+    background-color: #191a1c;
+    padding: 2rem 7%;
+}
+
+.getTouch .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.getTouch .title h3{
+    font-size: 30px;
+    position: relative;
+    color: #9da1a5;
+}
+
+.getTouch .title h3::after{
+    width: 190px;
+    background-color: red;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+}
+
+.touchContent{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.touchContent .cardContact{
+    color: #9da1a5;
+    border: 1px solid #9da1a5;
+    padding: 50px 20px;
+}
+
+.touchContent .cardContact h3{
+    margin-top: 20px;
+}
+
+.touchContent .cardEmail{
+    width: 70%;
+}
+
+.touchContent .cardEmail input{
+    background-color: transparent;
+    border: 1px solid #9da1a5;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+.touchContent textarea{
+    width: 90%;
+    margin-top: 30px;
+    background-color: transparent;
+    margin-left: -20px;
+    height: 200px;
+    padding: 10px;
+}
+
+.touchContent button{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid #9da1a5;
+    color: #9da1a5;
+    cursor: pointer;
+}
+
+.touchContent button:hover{
+    background-color: #9da1a5;
+    padding: 10px 20px;
+    border: 1px solid #9da1a5;
+    color: #191a1c;
+}
+
+.footers{
+    background-color: #1d1e20;
+    text-align: left;
+    padding: 20px 5%;
+    color: #9da1a5;
+}
